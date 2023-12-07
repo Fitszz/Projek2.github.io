@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial -scale=1">
+    <meta lang="english">
+    <title>Pharmacy Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <header>
+    <input type ="checkbox" name ="" id ="chk1">
+    <div class="logo">
+      <img src="image/logo2.png">
+    </div>
+        <div class="search-box">
+            <form>
+                <input class="searchbox" type ="text" name ="search" id ="srch" placeholder="Search">
+                <button class="btn" type ="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li class="dropdown">
+              <a href="#">Product <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              </svg></a>
+              <ul class="dropdown-content">
+                  <li><a href="product1.html">Product 1</a></li>
+                  <li><a href="product2.html">Product 2</a></li>
+              </ul>
+          </li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+</header>
+ 
+
+
+<main>
+
+
+<content>
+  <div class="contentall">
+
+
+    <h2 style="text-align: center ; color: #ffffff; padding-bottom: 10px;">Contact Us</h2>
+
+    <form class="formcontact" >
+        <p>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Ali" required>
+        </p>
+
+        <p>
+          <label for="nama">I.C Number : </label>
+          <input type="text" name="nric" placeholder="010293847593" id="nric" oninput="validate_nric()">
+          <span id="msgnric"></span>
+      
+          <input type="button" value="Generate Personal Info" onclick="generatePersonalInfo()"> 
+      
+      </p>
+      <p>
+        <label for="nama">Date Of Birth : </label>
+        <input type="date" name="tarikhlahir" id="tarikhlahir">
+        <span id="outPutTarikhLahir"></span>
+    </p>
+
+    <p>
+        <label for= "umur">Age : </label>
+        <input type="text" name="umur" id="umur">
+    </p>
+      
+      <p>
+            <label for="Jantina">Gender: </label>
+            <input type="radio" name="jantina" id="Lelaki" value="Lelaki">Male
+            <input type="radio" name="jantina" id="Perempuan" value="Perempuan">Female
+        
+        </p>
+
+        <p>
+            <label for="emel">Email</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+        </p>
+
+        <p>
+            <label for="phone">No. Phone</label>
+            <input type="text" name="nomber_telefon" id="nomber_telefon" placeholder="0123456789" required>
+        </p> 
+        
+        
+
+        <p>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" placeholder="Your address" required></textarea>
+        </p>
+
+        <p>
+            <label for="status_pelajar">Members</label>
+
+            <select name="status" id="status">
+                <option value="">--Pls choose--</option>
+                <option value="Aktif">Yes</option>
+                <option value="Tidak Aktif">No</option>
+            </select>
+        </p>
+
+        <p>
+          <button type="submit">Submit</button> &nbsp;
+          <button type="reset">Reset</button>
+          <input type="button" value="Validate" onclick="formValidation()"> 
+  
+      </p>
+</form>
+</main>
+
+ 
+</div>
+
+</content>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="About Us.html">about us</a></li>
+          <li><a href="Services.html">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product2.html">Medicine</a></li>
+          <li><a href="product1.html">Skin care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright 2023 by DDT1120, DDT1124, DDT1111, DDT1101 | All Right Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/function.js"></script>
+</body>
+</html>
