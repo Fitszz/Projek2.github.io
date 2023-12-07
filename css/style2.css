@@ -13,8 +13,7 @@
   .calendar {
     width: 90%;
     height: 30rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
   }
